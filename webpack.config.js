@@ -21,7 +21,8 @@ module.exports = {
                         getCustomTransformers: (program, getProgram) => ({
                             before: [typeCompiler.transformer],
                             afterDeclarations: [typeCompiler.declarationTransformer],
-                        })
+                        }),
+                        experimentalWatchApi: true
                     }
                 },
                 exclude: /node_modules/,
